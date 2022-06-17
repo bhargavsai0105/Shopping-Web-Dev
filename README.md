@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Prequisites
 * node >10
-* mongodb
+* mongodb (running on localhost:27017)
 
 ## Development server
 
