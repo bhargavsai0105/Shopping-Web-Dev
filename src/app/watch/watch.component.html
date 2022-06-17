@@ -1,0 +1,16 @@
+<div class="phone row">
+    <div class="col-sm-3" *ngFor="let data of datasource ">
+      <div class="card" style="width: 18rem;">
+        <img src="{{data.Img}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{data.Pname}}</h5>
+          <p class="card-text">{{data.Features}}</p>
+          <p class="card-text">{{data.Price}}</p>
+          <button class="btn btn-primary" (click)="goto()">Buy</button>
+
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  

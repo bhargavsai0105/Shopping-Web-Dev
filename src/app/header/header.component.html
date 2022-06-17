@@ -1,0 +1,75 @@
+
+<nav class="navbar navbar-expand-lg bg-white">
+    <div class="container-fluid ">
+       
+        <nav class="navbar bg-white">
+            <div class="container">
+              <a class="navbar-brand" [routerLink]="['Home']" alt="apple-icon" href="#" >
+                <img src="https://img.icons8.com/ios/72/mac-os--v2.gif" alt="" width="40" height="40">
+              </a>
+            </div>
+          </nav>
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse d-flex navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+           <b><a class="nav-link active" aria-current="page" [routerLink]="['Iphone']" href="#">iphone<img src="https://img.icons8.com/ios/2x/iphone.png" alt="" width="30" height="30"></a></b> 
+            
+
+          </li>
+          <li class="nav-item">
+          <b> <a class="nav-link" [routerLink]="['Airpods']" href="#">Airpods<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU8wQkOuCb4VuMdMCE8JFonzuSDsjI7b6saQ&usqp=CAU" alt="" width="32" height="32"></a></b> 
+          </li>
+          <li class="nav-item">
+          <b> <a class="nav-link" [routerLink]="['Watch']" href="#">Watch<img src="https://img.icons8.com/ios/2x/apple-watch.png" alt="" width="28" height="28"></a></b> 
+          </li>
+          
+          
+        </ul>
+    <div class="d-flex">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <b>  <a class="nav-link active" aria-current="page" [routerLink]="['Login']" href="#">logout</a></b> 
+              
+            </li>
+            
+            <!-- <li class="nav-item">
+            <b>  <a class="nav-link active" aria-current="page" [routerLink]="['ProductInfo']" href="#">Data</a></b> 
+              
+            </li> -->
+            <div class="dropdown" >
+              <button   class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" *ngIf="" aria-expanded="false">
+                Data
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" [routerLink]="['ProductInfo']" href="#">Product Data</a></li>
+                <li><a class="dropdown-item" [routerLink]="['userdata']"  href="#">User Data</a></li>
+               
+              </ul>
+            </div>
+            <li >
+              
+
+              
+            </li>
+            
+
+        </ul>
+        
+        
+            
+              <b class="nav-link active" aria-current="page"  href="#">Welcome {{username}}</b>
+                    
+
+    </div> 
+    <div class="d-flex">
+      
+    </div>
+      </div>
+    </div>
+    <hr class="line">
+    
+  </nav>

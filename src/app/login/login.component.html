@@ -1,0 +1,29 @@
+
+<mat-card>
+  <mat-card-title class="text-center">Login</mat-card-title><br>
+  <mat-card-content class="text-center">
+      <form [formGroup]="myform" #formData="ngForm">
+          <div class="mb-3 row">
+              <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="text" formControlName="Email" class="form-control" id="staticEmail" >
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password"  formControlName="Password" class="form-control" id="inputPassword">
+              </div>
+            </div> 
+            
+            <button class="btn btn-primary" type="submit" (click)="signin()" >Login</button><br><br>
+           <p>New to Apple? 
+             
+              <b style="color: rgb(71, 58, 195);" type="submit" [routerLink]="['Signup']"  (click)="goto()">Signup</b>
+            
+          
+      </form>
+  </mat-card-content>
+</mat-card>
+<body>
+</body>
